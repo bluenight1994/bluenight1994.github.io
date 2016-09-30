@@ -13,10 +13,11 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link href="css/album.css" rel="stylesheet">
     <!-- Theme CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
-
+    <script src="js/masonry.pkgd.min.js"></script>
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -32,6 +33,7 @@
 </head>
 
 <body>
+    <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -87,27 +89,35 @@
     </header>
 
     <!-- Main Content -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            New life in New York
-                        </h2>
-                        <h4 class="post-subtitle">
-                            Study in Cornell and Live in Newport
-                        </h4>
-                    </a>
-                    <p class="post-meta">Posted on September 24, 2016</p>
+                <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 160 }'>
+                    <div class="grid-item w3-card-12  w3-hover-shadow">
+                        <img class="pic_album" src="img/Helloween.JPG" alt="#">
+                        <div class="w3-container w3-center">
+                            <p>master Piece!</p>
+                        </div>
+                    </div>
+                    <div class="grid-item w3-card-12  w3-hover-shadow">
+                        <img class="pic_album" src="img/before.JPG" alt="start from zero">
+                        <div class="w3-container w3-center">
+                            <p>Start from Zero</p>
+                        </div>
+                    </div>
+                    <div class="grid-item w3-card-12  w3-hover-shadow">
+                        <img class="pic_album" src="img/after.JPG" alt="start from zero">
+                        <div class="w3-container w3-center">
+                            <p>from 0 to 1</p>
+                        </div>
+                    </div>
+                    <div class="grid-item w3-card-12  w3-hover-shadow">
+                        <img class="pic_album" src="img/company-challenge.png" alt="#">
+                        <div class="w3-container w3-center">
+                            <p>Google CIO Team</p>
+                        </div>
+                    </div>
                 </div>
-                <hr>
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>

@@ -1,0 +1,10 @@
+.grid-item {
+  width: 300px;
+  float: left;
+  border-radius: 5px;
+}
+
+.pic_album {
+	max-width:100%;
+	max-height:100%;
+}
